@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bengkel Putra Prima</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="adminlte.min.css">
+</head>
+<style>
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'popins',sans-serif;
+}
+
+body{
+
+}
+.container{
+    margin-top: 5%;
+    max-width: 700px;
+    width: 100%;
+    border-radius: 5px;
+    margin-left: 10%;
+}
+.container .title{
+    font-size: 25px;
+    font-weight: 5px;
+    margin-top: 5%;
+
+}
+
+form .user-details .input.box{
+    margin-bottom: 15px;
+    width: calc(100% / 2 - 20px);
+}
+.user-details .input-box .details{
+    position: absolute;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+input:focus{
+    border-color: #9b59b6;
+    box-shadow: 0 0 8px 0 #9b59b6;
+}
+textarea:focus{
+    border-color: dodgerblue;
+    box-shadow: 0 0 8px 0 dodgerblue;
+}
+select:focus{
+    border-color: dodgerblue;
+    box-shadow: 0 0 8px 0 dodgerblue;
+}
+
+.user-details .input-box input{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-left: 35%;
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+.user-details .input-box input::focus,
+.user-details .input-box input:valid{
+    border-color: #9b59b6;
+}
+form .gender-details .category{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 35%;
+}
+.gender-details .category label{
+    display: flex;
+    align-items: center;
+}
+.gender-details .category .dot{
+    height: 18px;
+    width: 18px;
+    background: #d9d9d9;
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 5px solid transparent;
+    transition: all 0.3s ease;
+}
+#dot-1:checked ~ .category label .one,
+#dot-2:checked ~ .category label .two{
+    border-color: #d9d9b6;
+    background: #9b59b6;
+    cursor: pointer;
+}
+form input[type="radio"]{
+    display: none;
+}
+form .button{
+    height: 45px;
+    margin: 45px 0;
+    
+}
+form .button input{
+    height: 100%;
+    width: 20%;
+    outline: none;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    appearance: none;
+
+    color: #fff;
+    background-color: rgb(22, 189, 22);;
+    box-shadow: inset 0 -8px 0 0 rgba(0, 0, 0, 0.2);
+    transition: 0.5s;
+    text-shadow: 0px 3px rgba(0, 0, 0, 0.2);
+}
+form .button input:hover{
+    background: linear-gradient(135deg, #71b7e6, #9b59b9);
+}
+form .button input:active{
+    box-shadow: inset 0 -1 0 0 rgba(0, 0, 0, 0.2);
+    text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
+}
+.button2{
+    height: 45px;
+    margin: 45px 0;
+}
+.button2{
+    height: 100%;
+    width: 20%;
+    margin-left: 10px;
+    outline: none;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    appearance: none;
+    
+    color: red;
+    border: 3px solid red;
+    background-image: linear-gradient(to bottom, transparent 50%, red 50%);
+    background-size: 100% 200%;
+    background-position: 0% 5%;
+}
+form .button2:hover{
+    color: #fff;
+    background: red;
+    background-position: 0% 0%;
+}
+
+#format {
+    height: 45px;
+    width: 45%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-left: 35%;
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+    appearance: none;
+    cursor: pointer;
+    
+}
+#deskripsi{
+    height: 100px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-left: 35%;
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+    appearance: none;
+}
+.input-box input[type="phone"]{
+    width: 45%;
+}
+.input-box input[type="email"]{
+    width: 45%;
+}
+.input-box span1{
+    color: red;
+}
+.input-box input:invalid,
+.input-box input:required:invalid{
+    border-color: red;
+}
+.input-box input:valid,
+.input-box input:required{
+    border-color: seagreen;
+}
+form input[type="date"]{
+    cursor: pointer;
+}
+#submit-error{
+    color: red;
+}
+.input-box span1 i{
+    color: seagreen;
+    position: absolute;
+}
+.popup{
+    width: 400px;
+    background: #fff;
+    border-radius: 6px;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%,-50%), scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #333;
+    visibility: hidden;
+    transition: transform 0.4s,top 0.4s;
+}
+.open-popup{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+}
+.popup img{
+    width: 100px;
+    margin-top: -50px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+.popup h2{
+    font-size: 38px;
+    font-weight: 500;
+    margin: 30px 0 10px;
+}
+.popup button{
+    width: 100%;
+    margin-top: 50px;
+    padding: 10px 0;
+    background: #6fd649;
+    color: #fff;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.header .container1 {
+    padding: 15px 0px 15px 0px;
+    width: 100%;
+    margin: auto;
+    height: 20vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(bekgron.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+}
+
+.header .container1 .wrap-header {
+    width: 100%;
+    margin: auto;
+}
+
+.header .container1 .wrap-header h1 {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 50px;
+    color: white;
+}
+
+/* Navbar */
+.navbar {
+    width: 100%;
+}
+
+.navbar .container1 {
+    background-color: #4a98f7;
+}
+
+.navbar .container1 .box-navigation {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 15px 0px 15px 0px;
+}
+
+.navbar .container1 .box-navigation .box:nth-child(1) {
+    margin-left: 35px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+
+.navbar .container1 .box-navigation .box:nth-child(1) a {
+    text-decoration: none;
+    font-size: 17px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+.navbar .container1 .box-navigation .box:nth-child(2) ul {
+    list-style: none;
+    display: flex;
+    text-align: center;
+}
+
+.navbar .container1 .box-navigation .box:nth-child(2) ul li {
+    margin-left: 45px;
+    display: flex;
+    align-items: center;
+}
+
+.navbar .container1 .box-navigation .box:nth-child(2) ul li a {
+    text-decoration: none;
+    font-size: 17px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+.navbar .container1 .box-navigation .box:nth-child(3) {
+    margin-left: 25vw;
+    display: flex;
+    align-items: center;
+}
+
+.navbar .container1 .box-navigation .box:nth-child(3) i {
+    color: white;
+    margin-right: 20px;
+    font-size: 23px;
+}
+
+.navbar .container1 .box-navigation .box:nth-child(3) input {
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.navbar .container1 .box-navigation .box:nth-child(4) ul {
+    list-style: none;
+    margin-left: 30px;
+}
+
+.navbar .container1 .box-navigation .box:nth-child(4) ul li a {
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-size: 20px;
+}
+
+@media (max-width: 584px) {
+    .container{
+        max-width: 100%;
+    }
+    form .user-details .input.box{
+        margin-bottom: 15px;
+        width: 100%;
+    }
+    form .gender-details .category{
+        width: 100%;
+    }
+
+}
+</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Crimson+Pro">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<body>
+    <section class="header">
+        <div class="container1">
+          <div class="wrap-header">
+            <h1>Bengkel - IN AJA</h1>
+            <img src="" alt="" />
+          </div>
+        </div>
+      </section>
+  
+      <section class="navbar">
+        <div class="container1">
+          <div class="box-navigation">
+            <div class="box">
+              <a href="#">Bengkel - IN</a>
+            </div>
+            <div class="box">
+              <ul>
+                <li>
+                  <a href="#">Home</a>
+                </li>
+                <li>
+                  <a href="#">Product & Layanan</a>
+                </li>
+                <li>
+                  <a href="#">Booking</a>
+                </li>
+                <li>
+                  <a href="#">Berita</a>
+                </li>
+                <li>
+                  <a href="#">Tentang Kami</a>
+                </li>
+              </ul>
+            </div>
+  
+            <div class="box">
+              <i class="ri-search-line"></i>
+              <input type="search" placeholder="Search Here" />
+            </div>
+  
+            <div class="box">
+              <ul>
+                <li>
+                  <a href="#">Login</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    <div class="container">
+        <div class="title">Booking Service</div>
+        <br>
+        <br>
+        <form action="#">
+            <div class="user-details">
+                
+                <div class="input-box">
+                    <span class="details">Jenis Kendaraan :</span>
+                    <div class="select">
+                    <select name="format" id="format">
+                        <option selected disabled>Minibus</option>
+                        <option value="sepeda">Sepeda</option>
+                        <option value="motor">Motor</option>
+                        <option value="mobil">Mobil</option>
+                        <option value="bus">Bus</option>
+                        <option value="becak">Becak</option>
+                    </select>
+                    <span1 id="format-error"></span1>
+                    </div>
+                    </div>
+                    <br>
+                <div class="input-box">
+                <span class="details">Nama Pemesan :</span>
+                <input type="text" placeholder="Masukan Nama Pemesan" id="contact-name" onkeyup="validateName()" required>
+                <span1 id="name-error"></span1>
+                </div>
+                <br>
+                <div class="gender-details">
+                    <input type="radio" name="gender" id="dot-1">
+                    <input type="radio" name="gender" id="dot-2">
+                <span class="details">Kategori Peminjam :</span>
+                <div class="category">
+                    <label for="dot-1">
+                        <span class="dot one"></span>
+                        <span class="gender">Pribadi</span>
+                    </label>
+                    <label for="dot-2">
+                        <span class="dot two"></span>
+                        <span class="gender">Perusahaan/Oragnisasi</span>
+                    </label>
+                </div>
+                </div>
+                <br>
+                <div class="input-box">
+                <span class="details">Deskripsi Kebutuhan :</span>
+                <textarea id="deskripsi" rows="10" placeholder="Tuliskan Deskripsi" required></textarea>
+                <span1 class="deskripsi-error"></span1>
+                </div>
+                <br>
+                <div class="input-box">
+                <span class="details">Jam, Tanggal Service :</span>
+                <input type="date" placeholder="Enter your name" required>
+                <span1 id="date-error"></span1>
+                </div>
+                <br>
+                <div class="input-box">
+                <span class="details">Request Montir :</span>
+                <div class="select">
+                <select name="format" id="format">
+                    <option selected disabled>Pilih Montir</option>
+                    <option value="radit">Radit</option>
+                    <option value="yasir">Yasir</option>
+                    <option value="fuad">Fuad</option>
+                    <option value="nadya">Nadya</option>
+                    <option value="zila">Zila</option>
+                </select>
+                <span1 id="format1"></span1>
+                </div>
+                </div>
+                <br>
+                <div class="input-box">
+                <span class="details">Telpon/HP :</span>
+                <input type="phone" placeholder="Masukan No. Tlp" id="contact-phone" onkeyup="validatePhone()" required>
+                <span1 id="phone-error"></span1>
+                </div>
+                <br>
+                <div class="input-box">
+                <span class="details">Email :</span>
+                <input type="email" placeholder="Masukan Email" id="contact-email" onkeyup="validateEmail()" required>
+                <span1 id="email-error"></span1>
+                </div>
+                <br>
+                <div class="button">
+                <input type="submit" value="Submit" onclick="openPopup()"> 
+                <span1 id="submit-error"></span1>
+                <button class="button2" onclick="reset()">Reset</button>
+                <div class="popup" id="popup">
+                    <img src="https://static.vecteezy.com/system/resources/previews/010/141/413/non_2x/tick-icon-sign-symbol-design-free-png.png" alt="mantap">
+                    <h2>Thank You!</h2>
+                    <p>Your details has been succesfully submitted. Thanks!</p>
+                    <button type="button" onclick="closePopup()">Ok</button>
+                </div>
+            </div>
+        </div>
+        </form>
+    </div>
+    <br>
+    <section class="content">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-12">
+              <div class="card">
+                <footer class="main-footer">
+                  <!-- Default to the left -->
+                    <h7>Develop By Mahasiswa STT-NF @2022</h7>
+                </footer>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    <script>
+        var nameError = document.getElementById('name-error')
+        var formatError = document.getElementById('format-error')
+        var format1Error = document.getElementById('format1-error')
+        var dateError = document.getElementById('date-error')
+        var deskripsiError = document.getElementById('deskirpsi-error')
+        var phoneError = document.getElementById('phone-error')
+        var emailError = document.getElementById('email-error')
+        var submitError = document.getElementById('submit-error')
+
+        function validateName(){
+            var name = document.getElementById('contact-name').value;
+
+            if(name.length == 0){
+                nameError.innerHTML = 'Name is reiquied';
+                return false;
+            }
+            if(!name.match(/^[A-Za-z]*\s{1}[A-Za-z]*$/)){
+                nameError.innerHTML = 'Write full name';
+                return false;
+            }
+            nameError.innerHTML = '<i class="fa-solid fa-circle-check"></i>';
+            return true;
+        }
+
+        function validatePhone(){
+            var phone = document.getElementById('contact-phone').value;
+
+            if(phone.length == 0){
+                phoneError.innerHTML = 'Phone no is reiquied';
+                return false;
+            }
+            if(!phone.match(/^[0-9]{10}$/)){
+                phoneError.innerHTML = 'Phone no shold be 10 digits';
+                return false;
+            }
+            phoneError.innerHTML = '<i class="fa-solid fa-circle-check"></i>';
+            return true;
+        }
+        function validateEmail(){
+            var email = document.getElementById('contact-email').value;
+
+            if(email.length == 0){
+                emailError.innerHTML = 'Name is reiquied';
+                return false;
+            }
+            if(!email.match(/^[A-Za-z\._\-[0-9]*[@][A-Za-z]*[\.][a-z]{2,4}$/)){
+                emailError.innerHTML = 'Email Invalid';
+                return false;
+            }
+            emailError.innerHTML = '<i class="fa-solid fa-circle-check"></i>';
+            return true;
+        }
+        
+        let popup = document.getElementById("popup");
+
+        function openPopup(){
+            popup.classList.add("open-popup");
+        }
+        function closePopup(){
+            popup.classList.remove("open-popup");
+        }
+
+        function myFunction() {
+            document.getElementById("myForm").reset();
+        }
+        </script>    
+</div>
+</body>
+</html>
