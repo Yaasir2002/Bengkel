@@ -21,6 +21,10 @@
     scroll-behavior: smooth;
 }
 
+.home{
+    margin: 20px 20px 0px 20px;
+    } 
+
 .container{
     margin-top: 5%;
     background: linear-gradient(135deg, #71b7e6, #9b59b9);
@@ -265,7 +269,7 @@ fieldset{
     width: 100%;
     margin: auto;
     height: 20vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../image/hero.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(dist/image/hero.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -375,6 +379,16 @@ fieldset{
 .footer .text-footer i {
     margin-right: 10px;
 }
+
+.breadcumb-arrow{
+    margin: 15px 10px;
+    border-top: 2px solid #1e3d59;
+    border-right: 2px solid #1e3d59;
+    width: 8px;
+    height: 8px;
+    transform: rotate(45deg);
+    }
+
 @media (max-width: 576px) {
     .navbar .container1 .box-navigation .box:nth-child(5) {
         display: flex;
@@ -686,10 +700,18 @@ fieldset{
       <br>
       <fieldset><legend>
       <div class="col-sm-19">
+<<<<<<< HEAD
         <ol class="breadcrumb float-right">
           <li class="breadcrumb-item"><a href="index.html">Home</a></li>
           <li class="breadcrumb-item active" area-current="page">Booking</li>
         </ol>
+=======
+        <ol class="breadcrumb float-sm-right home">
+            <li ><a href="index.html">Home</a></li>
+            <div class="breadcumb-arrow"></div>
+            <li class="breadcrumb-item active">Booking</li>
+                    </ol>
+>>>>>>> 99f763ccc2a23865ea0a62daac33b246cf573f47
     </div></legend>
     <br>
     
