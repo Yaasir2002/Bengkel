@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Login</title>
+
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+  <!-- icheck bootstrap -->
+  <link rel="stylesheet" href="plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="dist/css/adminlte.min.css">
+</head>
+<body class="hold-transition login-page">
+<div class="login-box">
+  <div class="login-logo">
+    <a href="#"><b>Login</b> Bengkel-IN</a>
+  </div>
+  <!-- /.login-logo -->
+  <div class="card">
+    <div class="card-body login-card-body">
+      <p class="login-box-msg">Login ke akun anda</p>
+
+      <form name="formLogin" action="#" onsubmit="return login()" method="post">
+        <div class="input-group">
+          <input type="text" class="form-control" id="username" placeholder="Username">
+          <div class="input-group-append">
+            <div class="input-group-text">
+              <span class="fas fa-user"></span>
+            </div>
+          </div>
+        </div>
+        <p class="mb-3 text-danger" id="error1"></p>
+        <div class="input-group">
+          <input type="password" class="form-control" id="password" placeholder="Password">
+          <div class="input-group-append">
+            <div class="input-group-text">
+              <span class="fas fa-lock"></span>
+            </div>
+          </div>
+        </div>
+        <p class="mb-3 text-danger" id="error2"></p>
+        <div class="d-flex justify-content-between">
+          <div class="col-">
+            <div class="checkbox-content icheck-primary">
+              <input type="checkbox" id="remember">
+              <label for="remember">Ingatkan saya</label>
+            </div>
+          </div>
+          <div class="col- text-end mt-1" >
+            <a href="#">Lupa password?</a>
+          </div>
+        </div>
+     
+      <div class="col align-self-center mt-3">
+        <button type="submit" class="btn btn-primary btn-block">Login</button>
+      </div>
+      <p class="mb-0 mt-2">
+        <a href="register.html" class="text-center">Registrasi user</a>
+      </p>
+    </form>
+    </div>
+    <!-- /.login-card-body -->
+  </div>
+</div>
+<!-- /.login-box -->
+
+<!-- jQuery -->
+<script src="plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- AdminLTE App -->
+<script src="dist/js/adminlte.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
