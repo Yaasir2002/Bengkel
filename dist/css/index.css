@@ -169,10 +169,10 @@
 }
 
 .content .wrap-content .box-content:nth-child(1) .main .header .breadcumb ul li .breadcumb-arrow {
-    border-top: 2px solid #1e3d59;
-    border-right: 2px solid #1e3d59;
-    width: 20px;
-    height: 20px;
+    border-top: 3px solid #1e3d59;
+    border-right: 3px solid #1e3d59;
+    width: 8px;
+    height: 8px;
     transform: rotate(45deg);
 }
 

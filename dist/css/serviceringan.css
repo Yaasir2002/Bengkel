@@ -638,7 +638,7 @@ hr:before{
     }
 }
 
-@media (min-width: 768px)and (max-width: 1551px) {
+@media (min-width: 768px)and (max-width: 990px) {
     .navbar .container .box-navigation .box:nth-child(5) {
         display: flex;
         margin-left: 70vw;
