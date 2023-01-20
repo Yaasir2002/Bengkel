@@ -223,6 +223,7 @@
 .content .wrap-content .box-content:nth-child(1) .main .card .item .item-content .content1 {
     padding: 10px;
     justify-content: center;
+    margin-right: 380px;
 }
 
 .content .wrap-content .box-content:nth-child(1) .main .card .item .item-content .content1 p {
@@ -236,6 +237,7 @@
     flex-direction: column;
     overflow: hidden;
     padding: 15px;
+    margin-left: -380px;
 }
 
 .content .wrap-content .box-content:nth-child(1) .main .card .item .item-content .content2 .contentgambar {

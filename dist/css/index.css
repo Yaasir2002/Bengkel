@@ -335,7 +335,7 @@
 }
 
 .content .wrap-content .box-content:nth-child(1) .main2 .main2-content .main-content .isi-isi {
-    background-image: url(../images/sb2.jpg);
+    background-image: url(../images/sb5.jpeg);
     width: 250px;
     height: 200px;
     background-size: cover;
@@ -345,11 +345,11 @@
 }
 
 .content .wrap-content .box-content:nth-child(1) .main2 .main2-content .main-content .isi:nth-child(2) .isi-isi {
-    background-image: url(../images/br4.jpg);
+    background-image: url(../images/sr5.jfif);
 }
 
 .content .wrap-content .box-content:nth-child(1) .main2 .main2-content .main-content .isi:nth-child(3) .isi-isi {
-    background-image: url(../images/br1.jpg);
+    background-image: url(../images/br5.jpg);
 }
 
 
