@@ -569,7 +569,7 @@ input[type="date"]{
     border: 1px solid #ccc;
     padding-left: 15px;
     margin-left: 33%;
-    font-size: 9px;
+    font-size: 10px;
     border-bottom-width: 1px;
     transition: all 0.3s ease;
   }
@@ -579,7 +579,7 @@ input[type="date"]{
     outline: none;
     color: #fff;
     border: none;
-    font-size: 8px;
+    font-size: 10px;
     font-weight: 250;
     border-radius: 3px;
     letter-spacing: 1px;
@@ -618,7 +618,7 @@ input[type="date"]{
     border: 1px solid #ccc;
     padding-left: 15px;
     margin-left: 33%;
-    font-size: 8px;
+    font-size: 10px;
     border-bottom-width: 2px;
     transition: all 0.3s ease;
     appearance: none;
@@ -631,7 +631,7 @@ input[type="date"]{
     border: 1px solid #ccc;
     padding-left: 15px;
     margin-left: 33%;
-    font-size: 8px;
+    font-size: 10px;
     border-bottom-width: 2px;
     transition: all 0.3s ease;
     appearance: none;
@@ -642,7 +642,7 @@ input[type="date"]{
     }
     #telpon{
     width: 100px;
-    font-size: 8px;
+    font-size: 10px;
     }
     form .gender-details .category{
     display: flex;
@@ -930,7 +930,7 @@ input[type="date"]{
   }
   </style>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  
+  <script src="dist/js/jsindex.js"></script>
 </head>
 <body class="hold-transition sidebar-mini">
   <section class="header">
@@ -1208,11 +1208,12 @@ input[type="date"]{
                     <a href=""></a>
                   </div><!-- /.col -->
                   <div class="col-sm-6">
-                    <ol class="breadcrumb float-sm-right">
-                      <li class="breadcrumb-item"><a href="adminmontir.html">Admin</a></li>
+                    <ol class="breadcrumb float-sm-right home">
+                      <li ><a href="index.html">Home</a></li>
+                      <div class="breadcumb-arrow"></div>
                       <li class="breadcrumb-item active">Kelola Montir/Mekanik</li>
                     </ol>
-                    </div><!-- /.col -->
+                  </div><!-- /.col --><!-- /.col -->
                 </div><!-- /.row -->              
               </div>
             <!-- /.card-header -->
@@ -1343,7 +1344,8 @@ input[type="date"]{
         }
         function closePopup(){
             popup.classList.remove("open-popup");
-        }</script>
+        }
+        </script>
 
 <!-- ./wrapper -->
 
