@@ -75,9 +75,11 @@
 
 .navbar .container .box-navigation .box:nth-child(1) a {
     text-decoration: none;
-    font-size: 17px;
+    font-size: 25px;
     font-family: 'Poppins', sans-serif;
     color: white;
+    display: inline-block;
+    width: 180px;
 }
 
 .navbar .container .box-navigation .box:nth-child(2) {
@@ -87,11 +89,12 @@
 .navbar .container .box-navigation .box:nth-child(2) ul {
     list-style: none;
     display: flex;
-    text-align: center;  
+    text-align: center;
+    width: 1200px;
 }
 
 .navbar .container .box-navigation .box:nth-child(2) ul li {
-    margin-left: 40px;
+    margin-left: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -100,7 +103,7 @@
 
 .navbar .container .box-navigation .box:nth-child(2) ul li a {
     text-decoration: none;
-    font-size: 15px;
+    font-size: 20px;
     font-family: 'Poppins', sans-serif;
     color: white;
 }
@@ -413,14 +416,22 @@
 
     .navbar .container .box-navigation .box:nth-child(5) i {
         color: white;
-        font-size: 30px;
+        font-size: 25px;
     }
 
+    .navbar .container .box-navigation .box:nth-child(1) a {
+    text-decoration: none;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    width: 95px;
+    }
+    
     .navbar .container .box-navigation .box:nth-child(2) {
         display: flex;
         position: absolute;
         top: 200px;
-        left: 120px;
+        left: 100px;
         background-color: white;
         width: 250px;
         border-radius: 10px;
@@ -435,16 +446,23 @@
 
     .navbar .container .box-navigation .box:nth-child(2) ul {
         flex-direction: column;
+
     }
 
     .navbar .container .box-navigation .box:nth-child(2) ul li {
         margin-top: 10px;
+        margin-left: 0px;
     }
 
     .navbar .container .box-navigation .box:nth-child(2) ul li a {
         color: black;
     }
 
+    .navbar .container .box-navigation .box:nth-child(2) ul li:nth-child(6) i {
+        color: black;
+        margin-left: 10px;
+        font-size: 23px;
+    }
 
     .navbar .container .box-navigation .box:nth-child(4) {
         display: none;
@@ -626,8 +644,16 @@
 @media (min-width: 577px)and (max-width: 768px) {
     .navbar .container .box-navigation .box:nth-child(5) {
         display: flex;
-        margin-left: 70vw;
+        margin-left: 50vw;
     }
+
+    .navbar .container .box-navigation .box:nth-child(1) a {
+        text-decoration: none;
+        font-size: 15px;
+        font-family: 'Poppins', sans-serif;
+        color: white;
+        width: 95px;
+        }
 
     .navbar .container .box-navigation .box:nth-child(5) i {
         color: white;
@@ -843,7 +869,7 @@
 @media (min-width: 768px)and (max-width: 990px) {
     .navbar .container .box-navigation .box:nth-child(5) {
         display: flex;
-        margin-left: 80vw;
+        margin-left: 70vw;
     }
 
     .navbar .container .box-navigation .box:nth-child(5) i {
@@ -851,10 +877,18 @@
         font-size: 30px;
     }
 
+    .navbar .container .box-navigation .box:nth-child(1) a {
+        text-decoration: none;
+        font-size: 15px;
+        font-family: 'Poppins', sans-serif;
+        color: white;
+        width: 95px;
+        }
+
     .navbar .container .box-navigation .box:nth-child(2) {
         display: flex;
         position: absolute;
-        top: 260px;
+        top: 300px;
         left: 420px;
         background-color: white;
         width: 250px;
@@ -1054,5 +1088,69 @@
 
     .footer .text-footer i {
         margin-right: 10px;
+    }
+}
+
+@media (min-width: 990px)and (max-width: 1500px) {
+    .navbar {
+        width: 100%;
+    }
+
+    .navbar .container {
+        background-color: #4a98f7;
+    }
+
+    .navbar .container .box-navigation {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 15px 0px 15px 0px;
+    }
+
+    .navbar .container .box-navigation .box:nth-child(1) a {
+        display: inline-block;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+        width: 200px;
+    }
+
+
+    .navbar .container .box-navigation .box:nth-child(2) ul {
+        list-style: none;
+        display: flex;
+        width: 1050px;
+    }
+
+    .navbar .container .box-navigation .box:nth-child(2) ul li {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 30px;
+    }
+
+    .navbar .container .box-navigation .box:nth-child(2) ul li a {
+        text-decoration: none;
+        font-size: 17px;
+        font-family: 'Poppins', sans-serif;
+        color: white;
+        display: inline-block;
+        width: 100%;
+    }
+
+    .navbar .container .box-navigation .box:nth-child(2) ul li:nth-child(6) input {
+        border-radius: 5px;
+        padding: 5px;
+    }
+
+
+    .navbar .container .box-navigation .box:nth-child(2) ul li:nth-child(6) i {
+        color: white;
+        margin-left: 10px;
+        font-size: 23px;
+    }
+
+    .navbar .container .box-navigation .box:nth-child(5) {
+        display: none;
     }
 }
