@@ -375,6 +375,23 @@ input[type="date"]{
   padding-left: 20px;
 }
 
+.gulir{
+      padding-left: 30px;
+    }
+
+.gulirisi{
+  font-size: 15px;
+}
+
+.logout{
+  padding-left: 5px;
+}
+
+hr{
+  border-top: 0.1px solid rgb(100, 102, 102);
+}
+
+
 /* Navbar */
 .navbar {
     width: 100%;
@@ -1140,39 +1157,58 @@ input[type="date"]{
       <nav class="mt-2">
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
           <!-- Add icons to the links using the .nav-icon class
-          with font-awesome or any other icon font library -->
-          <li class="nav-item">
-            <a href="adminmontir.html" class="nav-link active">
+               with font-awesome or any other icon font library -->
+          <li class="nav-item menu-open">
+            <a href="#" class="nav-link active">
               <i class="nav-icon fas fa-circle"></i>
               <p>
                 Montir/Mekanik
                 <i class="right fas fa-angle-right"></i>
               </p>
             </a>
-            <hr>
-            <ul class="nav">
+            <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="#" class="nav-link">
-                  <i class="nav-icon fas fa-circle"></i>
-                  <p>Produk</p>
+                <a href="adminmontir.html" class="nav-link gulir">
+                  <i class="nav-icon fas fa-caret-right"></i>
+                  <p class="gulirisi">Daftar Montir/Mekanik</p>
                 </a>
               </li>
-              <li class="nav">
-                <a href="admintransaksi.html" class="nav-link">
-                  <i class="nav-icon fas fa-circle"></i>
-                  <p>Transaksi</p>
+              <li class="nav-item">
+                <a href="Admin_Form.html" class="nav-link active gulir">
+                  <i class="nav-icon fas fa-caret-right"></i>
+                  <p class="gulirisi">Kelola Montir/Mekanik</p>
                 </a>
               </li>
             </ul>
-            <hr>
-            <ul class="nav ceklis">
-              <li class="nav-item">
-                <a href="index.html" class="nav-link">
-                  <i class="nav-icon fas fa-check"></i>
-                  <p class="logout">Logout</p>
-                </a>
-              </li>
-            </ul>
+          </li>
+        </ul>
+        <hr>
+        <ul class="nav nav-pills nav-sidebar flex-column">
+          <li class="nav-item">
+            <a href="admintransaksi.html" class="nav-link">
+              <i class="nav-icon fas fa-circle"></i>
+              <p>
+                Transaksi
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="produkLayanan.html" class="nav-link">
+              <i class="nav-icon fas fa-circle"></i>
+              <p>
+                Produk & Layanan
+              </p>
+            </a>
+          </li>
+        </ul>
+        <hr>
+        <ul class="nav nav-pills nav-sidebar flex-column">
+          <li class="nav-item">
+            <a href="login.html" class="nav-link">
+              <i class="nav-icon fas fa-check logout"></i>
+              <p class="logout">Logout</p>
+            </a>
+          </li>
         </ul>
       </nav>
       <!-- /.sidebar-menu -->
@@ -1183,15 +1219,7 @@ input[type="date"]{
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
     <!-- Content Header (Page header) -->
-    <div class="content-header">
-      <div class="container-fluid">
-        <div class="row mb-2">
-          <div class="col-sm-6">
-            <h1 class="m-0">Admin Bengkel-In</h1>
-          </div><!-- /.col -->
-        </div><!-- /.row -->
-        <!-- SidebarSearch Form -->
-      </div><!-- /.container-fluid -->
+    <div class="content-header up">
     </div>
     <!-- /.content-header -->
 
