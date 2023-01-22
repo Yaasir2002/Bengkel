@@ -17,6 +17,9 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <link rel="stylesheet" href="dist/css/adminlte.min.css">
   <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
   <link rel="icon" href="dist/image/favicon.svg" type="image/x-icon" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
   <style>
     *{
     margin: 0;
@@ -164,8 +167,8 @@ form .button input:active{
     position: absolute;
 }
 .button2{
-    height: 5%;
-    width: 15%;
+    height: 100%;
+    width: 20%;
     outline: none;
     border: none;
     font-size: 18px;
@@ -226,6 +229,7 @@ form .button2:hover{
   left: 0;
   right: 0;
   display: flex;
+  justify-content: space-between;
 }
 input[type="checkbox"]{
   appearance: none;
@@ -270,7 +274,7 @@ input[type="checkbox"]:checked::after{
 }
 .upload{
   position: absolute;
-  margin-left: 69%;
+  margin-left: 75%;
 }
 
 .upload img{
@@ -297,8 +301,8 @@ input[type="checkbox"]:checked::after{
   cursor: pointer;
 }
 .img10{
-  width: 70%;
-  height: 140%;
+  width: 75%;
+  height: 100%;
 }
 textarea{
   min-height: 120px;
@@ -546,7 +550,7 @@ input[type="date"]{
     }
     
     .container{
-        max-width: 96%;
+        max-width: 90%;
         display: block !important;
     }
     form .user-details .input.box{
@@ -593,11 +597,11 @@ input[type="date"]{
     text-shadow: 0px 3px rgba(0, 0, 0, 0.2);
     }
     .button2{
-    height: 5%;
-    width: 20%;
+    height: 70%;
+    width: 25%;
     outline: none;
     border: none;
-    font-size: 8px;
+    font-size: 10px;
     font-weight: 250;
     border-radius: 5px;
     letter-spacing: px;
@@ -663,6 +667,17 @@ input[type="date"]{
     border: 5px solid transparent;
     transition: all 0.3s ease;
     }
+    .boxcheck{
+      margin-right: 7%;
+      margin-left: 1%;
+    top: 0;
+    font-size: 100%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    
+}
     input[type="checkbox"]{
     appearance: none;
     -webkit-appearance: none;
@@ -711,8 +726,7 @@ input[type="date"]{
     }
     .upload{
     position: absolute;
-    margin-left: 63%;
-    margin-bottom: 2%;
+    margin-left: 69%;
     }
     
     .upload img{
@@ -1218,16 +1232,24 @@ input[type="date"]{
               </div>
             <!-- /.card-header -->
               <fieldset>
+                <div data-aos="fade-up"
+     data-aos-duration="3000">
+
               <div class="container">
                   <br>
                   <form id="form" action="http://127.0.0.1:5500/AdminLTE-master/index.html?format=pemula#">
                     <div class="user-details">
+                      <div data-aos="fade-up"
+     data-aos-anchor-placement="center-bottom">
                       <div class="input-box">
                       <span class="details">Nama Mekanik :</span>
                       <input id="nama" type="text" placeholder="Masukan Nama Pemesan" id="contact-name" onkeyup="validateName()" required="">
                       <span1 id="name-error"></span1>
                       </div>
+                      </div>
                       <br>
+                      <div data-aos="fade-up"
+     data-aos-anchor-placement="center-bottom">
                           <div class="input-box">
                               <span class="details">Kategori :</span>
                               <div class="select">
@@ -1238,11 +1260,17 @@ input[type="date"]{
                               </select>
                             </div>
                           </div>
+                          </div>
                           <br>
+                          <div data-aos="fade-up"
+     data-aos-anchor-placement="center-bottom">
                           <div class="input-box">
                           <span class="details">Deskripsi Skill :</span>
                           <textarea id="deskripsi" class="deskripsi" rows="10" placeholder="Tuliskan Deskripsi" required=""></textarea>
                           </div>
+                          </div>
+                          <div data-aos="fade-up"
+     data-aos-anchor-placement="center-bottom">
                           <span class="details">Kemampuan :</span>
                           <div class="boxcheck kotak">
                             <br>
@@ -1254,7 +1282,10 @@ input[type="date"]{
                               <input type="checkbox" id="chech3">
                               <label for="check1">Body Repair</label>
                           </div>
+                          </div>
                           <br>
+                          <div data-aos="fade-up"
+     data-aos-anchor-placement="center-bottom">
                           <div class="upload">
                             <img class="img10" src="./dist/img/uploadfoto.png" alt="">
                             <div class="round">
@@ -1264,6 +1295,9 @@ input[type="date"]{
                             <br>
                             <b>Upload Foto</b>
                           </div>
+                          </div>
+                          <div data-aos="fade-up"
+     data-aos-anchor-placement="center-bottom">
                           <div class="input-box">
                           <span class="details">Tempat/Tnggl Lahir :</span>
                           <div class="tempat">
@@ -1271,12 +1305,18 @@ input[type="date"]{
                           <input id="tanggal" type="date" required="">
                           </div>
                           </div>
+                          </div>
                           <br>
+                          <div data-aos="fade-up"
+     data-aos-anchor-placement="center-bottom">
                           <div class="input-box">
                           <span class="details">Telpon :</span>
                           <input id="telpon" type="phone" placeholder="Masukan No. Tlp" id="contact-phone" onkeyup="validatePhone()" required="">
                           <span1 id="phone-error"></span1>
                           </div>
+                          </div>
+                          <div data-aos="fade-up"
+     data-aos-anchor-placement="center-bottom">
                           <div class="button">
                               <input type="submit" value="Submit" onclick="openPopup()"> 
                               <span1 id="submit-error"></span1>
@@ -1288,6 +1328,7 @@ input[type="date"]{
                                   <button type="button" onclick="closePopup()">Ok</button>
                               </div>
                           </div>
+                          </div>
                       
                     </div>
                   </form>
@@ -1296,6 +1337,7 @@ input[type="date"]{
         </div>
       </div>
     </section>
+  </div>
   </fieldset>
   <section class="footer">
     <div class="text-footer">
@@ -1345,6 +1387,7 @@ input[type="date"]{
         function closePopup(){
             popup.classList.remove("open-popup");
         }
+        AOS.init();
         </script>
 
 <!-- ./wrapper -->
