@@ -14,13 +14,16 @@
   <!-- Theme style -->
   <link rel="stylesheet" href="dist/css/adminlte.min.css">
   <link rel="icon" href="dist/image/favicon.svg" type="image/x-icon" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 <body class="hold-transition register-page" style="background-color: #347ebb;">
 <div class="register-box">
   <div class="register-logo">
     <p><b>Registrasi</b> User</a></p>
   </div>
-
+  <div data-aos="zoom-in"
+  data-aos-duration="3000">
   <div class="card">
     <div class="card-body register-card-body">
       <p class="login-box-msg">Daftarkan identitas anda</p>
@@ -83,11 +86,14 @@
 
       <a href="login.html" class="text-center">Sudah punya akun</a>
     </div>
+    </div>
     <!-- /.form-box -->
   </div><!-- /.card -->
 </div>
 <!-- /.register-box -->
-
+<script>
+  AOS.init();
+</script>
 <!-- jQuery -->
 <script src="plugins/jquery/jquery.min.js"></script>
 <!-- Bootstrap 4 -->
