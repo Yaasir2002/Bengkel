@@ -379,6 +379,23 @@ input[type="date"]{
   padding-left: 20px;
 }
 
+.gulir{
+      padding-left: 30px;
+    }
+
+.gulirisi{
+  font-size: 15px;
+}
+
+.logout{
+  padding-left: 5px;
+}
+
+hr{
+  border-top: 0.1px solid rgb(100, 102, 102);
+}
+
+
 /* Navbar */
 .navbar {
     width: 100%;
@@ -1018,17 +1035,33 @@ input[type="date"]{
           <a href="#" class="dropdown-item">
             <!-- Message Start -->
             <div class="media">
-              <img src="dist/img/radit.jpg" alt="User Avatar" class="img-size-50 mr-3 img-circle">
+              <img src="dist/img/nadya2.jpg" alt="User Avatar" class="img-size-50 mr-3 img-circle">
               <div class="media-body">
                 <h3 class="dropdown-item-title">
-                  Raditya 
+                  Nadya 
                   <span class="float-right text-sm text-danger"><i class="fas fa-star"></i></span>
                 </h3>
-                <p class="text-sm">Oke Terimakasih ya...</p>
+                <p class="text-sm">Halo, bisa reservasi pak?</p>
                 <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 2 Hours Ago</p>
               </div>
             </div>
             <!-- Message End -->
+          </a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item">
+          <!-- Message Start -->
+          <div class="media">
+            <img src="dist/img/zila.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
+            <div class="media-body">
+              <h3 class="dropdown-item-title">
+                Zila
+                <span class="float-right text-sm text-muted"><i class="fas fa-star"></i></span>
+              </h3>
+              <p class="text-sm">Ganti cat body motor berapa harganya pak?</p>
+              <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Days Ago</p>
+            </div>
+          </div>
+          <!-- Message End -->
           </a>
           <div class="dropdown-divider"></div>
           <a href="#" class="dropdown-item">
@@ -1041,23 +1074,7 @@ input[type="date"]{
                   <span class="float-right text-sm text-muted"><i class="fas fa-star"></i></span>
                 </h3>
                 <p class="text-sm">Pak ganti oli berapa harganya?</p>
-                <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
-              </div>
-            </div>
-            <!-- Message End -->
-          </a>
-          <div class="dropdown-divider"></div>
-          <a href="#" class="dropdown-item">
-            <!-- Message Start -->
-            <div class="media">
-              <img src="dist/img/nadya2.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
-              <div class="media-body">
-                <h3 class="dropdown-item-title">
-                  Nadya
-                  <span class="float-right text-sm text-warning"><i class="fas fa-star"></i></span>
-                </h3>
-                <p class="text-sm">Halo, bisa reservasi pak?</p>
-                <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 6 Hours Ago</p>
+                <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 20 Days Ago</p>
               </div>
             </div>
             <!-- Message End -->
@@ -1068,18 +1085,17 @@ input[type="date"]{
         <a href="#" class="dropdown-item">
           <!-- Message Start -->
           <div class="media">
-            <img src="dist/img/zila.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
+            <img src="dist/img/Radit.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
             <div class="media-body">
               <h3 class="dropdown-item-title">
-                Zila
+                Raditya
                 <span class="float-right text-sm text-muted"><i class="fas fa-star"></i></span>
               </h3>
-              <p class="text-sm">Ganti kampes rem berapa harganya pak?</p>
-              <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 8 Hours Ago</p>
+              <p class="text-sm">Terimakasih saya sangat puas...:)</p>
+              <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 23 Days Ago</p>
             </div>
           </div>
           <!-- Message End -->
-
           <a href="#" class="dropdown-item dropdown-footer">See All Messages</a>
         </div>
       </li>
@@ -1154,39 +1170,58 @@ input[type="date"]{
       <nav class="mt-2">
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
           <!-- Add icons to the links using the .nav-icon class
-          with font-awesome or any other icon font library -->
-          <li class="nav-item">
-            <a href="adminmontir.html" class="nav-link active">
+               with font-awesome or any other icon font library -->
+          <li class="nav-item menu-open">
+            <a href="#" class="nav-link active">
               <i class="nav-icon fas fa-circle"></i>
               <p>
                 Montir/Mekanik
                 <i class="right fas fa-angle-right"></i>
               </p>
             </a>
-            <hr>
-            <ul class="nav">
+            <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="#" class="nav-link">
-                  <i class="nav-icon fas fa-circle"></i>
-                  <p>Produk</p>
+                <a href="adminmontir.html" class="nav-link gulir">
+                  <i class="nav-icon fas fa-caret-right"></i>
+                  <p class="gulirisi">Daftar Montir/Mekanik</p>
                 </a>
               </li>
-              <li class="nav">
-                <a href="admintransaksi.html" class="nav-link">
-                  <i class="nav-icon fas fa-circle"></i>
-                  <p>Transaksi</p>
+              <li class="nav-item">
+                <a href="Admin_Form.html" class="nav-link active gulir">
+                  <i class="nav-icon fas fa-caret-right"></i>
+                  <p class="gulirisi">Kelola Montir/Mekanik</p>
                 </a>
               </li>
             </ul>
-            <hr>
-            <ul class="nav ceklis">
-              <li class="nav-item">
-                <a href="index.html" class="nav-link">
-                  <i class="nav-icon fas fa-check"></i>
-                  <p class="logout">Logout</p>
-                </a>
-              </li>
-            </ul>
+          </li>
+        </ul>
+        <hr>
+        <ul class="nav nav-pills nav-sidebar flex-column">
+          <li class="nav-item">
+            <a href="admintransaksi.html" class="nav-link">
+              <i class="nav-icon fas fa-circle"></i>
+              <p>
+                Transaksi
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="produkLayanan.html" class="nav-link">
+              <i class="nav-icon fas fa-circle"></i>
+              <p>
+                Produk & Layanan
+              </p>
+            </a>
+          </li>
+        </ul>
+        <hr>
+        <ul class="nav nav-pills nav-sidebar flex-column">
+          <li class="nav-item">
+            <a href="login.html" class="nav-link">
+              <i class="nav-icon fas fa-check logout"></i>
+              <p class="logout">Logout</p>
+            </a>
+          </li>
         </ul>
       </nav>
       <!-- /.sidebar-menu -->
@@ -1197,15 +1232,7 @@ input[type="date"]{
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
     <!-- Content Header (Page header) -->
-    <div class="content-header">
-      <div class="container-fluid">
-        <div class="row mb-2">
-          <div class="col-sm-6">
-            <h1 class="m-0">Admin Bengkel-In</h1>
-          </div><!-- /.col -->
-        </div><!-- /.row -->
-        <!-- SidebarSearch Form -->
-      </div><!-- /.container-fluid -->
+    <div class="content-header up">
     </div>
     <!-- /.content-header -->
 
