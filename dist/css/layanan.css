@@ -397,7 +397,7 @@ hr:before{
 
     .navbar .container .box-navigation .menu-navigation.menu-active {
         opacity: 1;
-
+        z-index: 1;
     }
 
     .navbar .container .box-navigation .box:nth-child(2) ul {
@@ -629,6 +629,7 @@ hr:before{
 
     .navbar .container .box-navigation .menu-navigation.menu-active {
         opacity: 1;
+        z-index: 1;
 
     }
 
@@ -829,7 +830,7 @@ hr:before{
 
     .navbar .container .box-navigation .menu-navigation.menu-active {
         opacity: 1;
-
+        z-index: 1;
     }
 
     .navbar .container .box-navigation .box:nth-child(2) ul {
