@@ -670,11 +670,6 @@ hr:before{
         background-size: cover;
     }
 
-        /* Header */
-        .header .container {
-            background-size: cover;
-        }
-    
     /* Content Produk Layanan */
 
     .content .wrap-content {
@@ -1527,7 +1522,7 @@ hr:before{
     
 }
 
-@media (min-width: 1500px)and (max-width: 1685px) {
+@media (min-width: 1500px)and (max-width: 2000px) {
     .navbar {
         width: 100%;
     }
