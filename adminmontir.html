@@ -20,6 +20,8 @@
   rel="stylesheet"
   />
   <link rel="icon" href="dist/image/favicon.svg" type="image/x-icon" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <style>
     .search{
       margin-top: 10px;
@@ -378,6 +380,8 @@
                   </ol>
                 </div><!-- /.col -->
               </div><!-- /.row -->              <!-- /.card-header -->
+              <div data-aos="fade-up"
+               data-aos-duration="3000">
               <div class="card-body table-responsive">
                 <table id="example1" class="table table-bordered table-striped">
                 <thead>
@@ -388,7 +392,7 @@
                   <th>Pengalaman</th>
                   <th>Action</th>
                 </tr>
-                </thead>
+              </thead>
                 <tbody>
                 <tr>
                   <td>1</td>
@@ -443,6 +447,7 @@
                 </tfoot>
               </table>
             </div>
+            </div>
               <!-- /.card-body -->
             </div>
             <!-- /.card -->
@@ -467,7 +472,9 @@
   <!-- /.control-sidebar -->
 </div>
 <!-- ./wrapper -->
-
+<script>
+  AOS.init();
+</script>
 <!-- jQuery -->
 <script src="plugins/jquery/jquery.min.js"></script>
 <!-- Bootstrap 4 -->
