@@ -149,7 +149,7 @@
 .content {
     width: 100%;
     height: max-content;
-    background-image: url(dist/image/logobengkelin4.jpg);
+    background-image: url(../image/bg@300x-100.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 40%;
@@ -192,7 +192,7 @@
 
 
 .card .card-border:nth-child(1) .card-image {
-    background-image: url(Bengkel/dist/img/Radit.jpg);
+    background-image: url(../img/Raditori.jpg);
     width: 230px;
     height: 250px;
     background-repeat: no-repeat;
@@ -203,7 +203,7 @@
 }
 
 .card .card-border:nth-child(2) .card-image {
-    background-image: url(Bengkel/dist/img/fuad.jpg);
+    background-image: url(../img/fuadori.jpeg);
     width: 230px;
     height: 250px;
     background-repeat: no-repeat;
@@ -214,7 +214,7 @@
 }
 
 .card .card-border:nth-child(3) .card-image {
-    background-image: url(Bengkel/dist/img/zila.jpg);
+    background-image: url(../img/zilaori.jpeg);
     width: 230px;
     height: 250px;
     background-repeat: no-repeat;
@@ -225,7 +225,7 @@
 }
 
 .card .card-border:nth-child(4) .card-image {
-    background-image: url(Bengkel/dist/img/nadya2.jpg);
+    background-image: url(../img/nadyaori.jpg);
     width: 230px;
     height: 250px;
     background-repeat: no-repeat;
@@ -236,7 +236,7 @@
 }
 
 .card .card-border:nth-child(5) .card-image {
-    background-image: url(Bengkel/dist/img/admin.jpg);
+    background-image: url(../img/_DSC0202_c48f66.jpg);
     width: 230px;
     height: 250px;
     background-repeat: no-repeat;
