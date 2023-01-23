@@ -324,7 +324,7 @@ hr:before{
 }
 
 
-@media (max-width: 765px) {
+@media (max-width: 576px) {
     .navbar .container .box-navigation .box:nth-child(5) {
         display: flex;
         margin-left: 50vw;
@@ -332,16 +332,24 @@ hr:before{
 
     .navbar .container .box-navigation .box:nth-child(5) i {
         color: white;
-        font-size: 30px;
+        font-size: 25px;
     }
 
+    .navbar .container .box-navigation .box:nth-child(1) a {
+    text-decoration: none;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    width: 95px;
+    }
+    
     .navbar .container .box-navigation .box:nth-child(2) {
         display: flex;
         position: absolute;
-        top: 200px;
-        left: 120px;
+        top: 240px;
+        left: 180px;
         background-color: white;
-        width: 250px;
+        width: 230px;
         border-radius: 10px;
         box-shadow: 0 0 5px black;
         opacity: 0;
@@ -354,16 +362,25 @@ hr:before{
 
     .navbar .container .box-navigation .box:nth-child(2) ul {
         flex-direction: column;
+        justify-content: left;
     }
 
     .navbar .container .box-navigation .box:nth-child(2) ul li {
         margin-top: 10px;
+        margin-left: 20px;
+        justify-content: left;
     }
 
     .navbar .container .box-navigation .box:nth-child(2) ul li a {
         color: black;
+        text-align: left;
     }
 
+    .navbar .container .box-navigation .box:nth-child(2) ul li:nth-child(6) i {
+        color: black;
+        margin-left: 5px;
+        font-size: 23px;
+    }
 
     .navbar .container .box-navigation .box:nth-child(4) {
         display: none;
@@ -485,11 +502,19 @@ hr:before{
     }
 }
 
-@media (min-width: 577px)and (max-width: 900px) {
+@media (min-width: 577px)and (max-width: 768px) {
     .navbar .container .box-navigation .box:nth-child(5) {
         display: flex;
-        margin-left: 70vw;
+        margin-left: 50vw;
     }
+
+    .navbar .container .box-navigation .box:nth-child(1) a {
+        text-decoration: none;
+        font-size: 17px;
+        font-family: 'Poppins', sans-serif;
+        color: white;
+        width: 130px;
+        }
 
     .navbar .container .box-navigation .box:nth-child(5) i {
         color: white;
@@ -500,7 +525,7 @@ hr:before{
         display: flex;
         position: absolute;
         top: 250px;
-        left: 120px;
+        left: 250px;
         background-color: white;
         width: 250px;
         border-radius: 10px;
@@ -515,16 +540,25 @@ hr:before{
 
     .navbar .container .box-navigation .box:nth-child(2) ul {
         flex-direction: column;
+        justify-content: left;
     }
 
     .navbar .container .box-navigation .box:nth-child(2) ul li {
         margin-top: 10px;
+        margin-left: 20px;
+        justify-content: left;
     }
 
     .navbar .container .box-navigation .box:nth-child(2) ul li a {
         color: black;
+        text-align: left;
     }
 
+    .navbar .container .box-navigation .box:nth-child(2) ul li:nth-child(6) i {
+        color: black;
+        margin-left: 5px;
+        font-size: 23px;
+    }
 
     .navbar .container .box-navigation .box:nth-child(4) {
         display: none;
@@ -642,7 +676,7 @@ hr:before{
     }
 }
 
-@media (min-width: 900px)and (max-width: 990px) {
+@media (min-width: 768px)and (max-width: 990px) {
     .navbar .container .box-navigation .box:nth-child(5) {
         display: flex;
         margin-left: 70vw;
@@ -653,11 +687,19 @@ hr:before{
         font-size: 30px;
     }
 
+    .navbar .container .box-navigation .box:nth-child(1) a {
+        text-decoration: none;
+        font-size: 20px;
+        font-family: 'Poppins', sans-serif;
+        color: white;
+        width: 130px;
+        }
+
     .navbar .container .box-navigation .box:nth-child(2) {
         display: flex;
         position: absolute;
-        top: 260px;
-        left: 420px;
+        top: 245px;
+        left: 530px;
         background-color: white;
         width: 250px;
         border-radius: 10px;
@@ -676,12 +718,20 @@ hr:before{
 
     .navbar .container .box-navigation .box:nth-child(2) ul li {
         margin-top: 10px;
+        margin-left: 20px;
+        justify-content: left;
     }
 
     .navbar .container .box-navigation .box:nth-child(2) ul li a {
         color: black;
+        text-align: left;
     }
 
+    .navbar .container .box-navigation .box:nth-child(2) ul li:nth-child(6) i {
+        color: black;
+        margin-left: 10px;
+        font-size: 23px;
+    }
 
     .navbar .container .box-navigation .box:nth-child(4) {
         display: none;
@@ -799,3 +849,66 @@ hr:before{
     }
 }
 
+@media (min-width: 990px)and (max-width: 1500px) {
+    .navbar {
+        width: 100%;
+    }
+
+    .navbar .container {
+        background-color: #4a98f7;
+    }
+
+    .navbar .container .box-navigation {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 15px 0px 15px 0px;
+    }
+
+    .navbar .container .box-navigation .box:nth-child(1) a {
+        display: inline-block;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+        width: 200px;
+    }
+
+
+    .navbar .container .box-navigation .box:nth-child(2) ul {
+        list-style: none;
+        display: flex;
+        width: 1050px;
+    }
+
+    .navbar .container .box-navigation .box:nth-child(2) ul li {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 30px;
+    }
+
+    .navbar .container .box-navigation .box:nth-child(2) ul li a {
+        text-decoration: none;
+        font-size: 17px;
+        font-family: 'Poppins', sans-serif;
+        color: white;
+        display: inline-block;
+        width: 100%;
+    }
+
+    .navbar .container .box-navigation .box:nth-child(2) ul li:nth-child(6) input {
+        border-radius: 5px;
+        padding: 5px;
+    }
+
+
+    .navbar .container .box-navigation .box:nth-child(2) ul li:nth-child(6) i {
+        color: white;
+        margin-left: 10px;
+        font-size: 23px;
+    }
+
+    .navbar .container .box-navigation .box:nth-child(5) {
+        display: none;
+    }
+}
