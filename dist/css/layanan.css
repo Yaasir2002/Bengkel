@@ -36,9 +36,9 @@ padding: 0;
     width: 100%;
     margin: auto;
     height: 20vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../image/hero.png);
+    background-image: url(../image/bg1@300x.png);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 50%;
     background-position: center;
     display: flex;
     align-items: center;
@@ -274,7 +274,7 @@ padding: 0;
 .content .wrap-content .box-content:nth-child(1) .main .card .item .item-content .gambar2 {
     width: 250px;
     height: 150px;
-    background-image: url(../images/sr5.jfif);
+    background-image: url(../images/sr.jpg);
     background-size: cover;
     background-position: center;
     border-radius: 10px;
@@ -430,7 +430,11 @@ hr:before{
         display: none;
     }
 
-
+        /* Header */
+        .header .container {
+            background-size: cover;
+        }
+    
     /* Content Produk Layanan */
 
     .content .wrap-content {
@@ -662,8 +666,6 @@ hr:before{
     .navbar .container .box-navigation .box:nth-child(3) {
         display: none;
     }
-
-
     /* Content Produk Layanan*/
 
     .content .wrap-content {
@@ -860,6 +862,11 @@ hr:before{
 
     .navbar .container .box-navigation .box:nth-child(3) {
         display: none;
+    }
+
+    /* Header */
+    .header .container {
+        background-size: cover;
     }
 
     /* Content */
