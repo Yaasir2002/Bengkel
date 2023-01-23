@@ -30,9 +30,9 @@
     width: 100%;
     margin: auto;
     height: 20vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../image/hero.png);
+    background-image: url(../image/bg1@300x.png);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 50%;
     background-position: center;
     display: flex;
     align-items: center;
@@ -485,6 +485,10 @@
         display: none;
     }
 
+    /* Header */
+    .header .container {
+        background-size: cover;
+    }
 
     /* Content */
 
@@ -720,6 +724,11 @@
         display: none;
     }
 
+    /* Header */
+    .header .container {
+        background-size: cover;
+    }
+
     /* Content */
 
     .content .wrap-content {
@@ -951,6 +960,11 @@
 
     .navbar .container .box-navigation .box:nth-child(3) {
         display: none;
+    }
+
+    /* Header */
+    .header .container {
+        background-size: cover;
     }
 
     /* Content */
