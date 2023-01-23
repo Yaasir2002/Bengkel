@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="dist/css/adminlte.min.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet"/>
     <link rel="icon" href="dist/image/favicon.svg" type="image/x-icon" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 <style>
     *{
@@ -19,6 +21,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'popins',sans-serif;
+    font-size: large;
     scroll-behavior: smooth;
 }
 
@@ -28,7 +31,7 @@
 
 .container{
     margin-top: 5%;
-    background-color: gray;
+    background-color: grey;
     box-shadow: 0 0 5px 5px black;
     color: black;
     width: 80%;
@@ -436,77 +439,41 @@ select:focus{
     border-color: #59b661;
     box-shadow: 0 0 8px 0 #59b661;
 }
-@media (max-width: 1px) {
-    .navbar .container1 .box-navigation .box:nth-child(5) {
-        display: flex;
-        margin-left: 50vw;
-    }
-
-    .navbar .container1 .box-navigation .box:nth-child(5) i {
-        color: white;
-        font-size: 30px;
-    }
-
-    .navbar .container1 .box-navigation .box:nth-child(2) {
-        display: flex;
-        position: absolute;
-        top: 200px;
-        left: 120px;
-        background-color: white;
-        width: 250px;
-        border-radius: 10px;
-        box-shadow: 0 0 5px black;
-        opacity: 0;
-    }
-
-    .navbar .container1 .box-navigation .menu-navigation.menu-active {
-        opacity: 1;
-
-    }
-
-    .navbar .container1 .box-navigation .box:nth-child(2) ul {
-        flex-direction: column;
-    }
-
-    .navbar .container1 .box-navigation .box:nth-child(2) ul li {
-        margin-top: 10px;
-    }
-
-    .navbar .container1 .box-navigation .box:nth-child(2) ul li a {
-        color: black;
-    }
-
-
-    .navbar .container1 .box-navigation .box:nth-child(4) {
-        display: none;
-    }
-
-    .navbar .container1 .box-navigation .box:nth-child(3) {
-        display: none;
-    }
-    .footer {
-        width: 100%;
-        background-color: #4a98f7;
-        display: flex;
-        justify-content: center;
-    }
-
-    .footer .text-footer {
-        display: flex;
-        align-items: center;
-        color: white;
-        font-weight: 600;
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 15px;
-        padding: 20px;
-    }
-
-    .footer .text-footer i {
-        margin-right: 10px;
-    }
-    
+.linkproduk{
+    padding-left: 6px;
+    padding-top: 2px;
 }
+
+.warna{
+    color: rgb(97, 97, 97);
+
+}
+
 @media (max-width: 720px) {
+    .linkproduk{
+    padding-left: 6px;
+    padding-top: 2px;
+}
+
+.warna{
+    color: rgb(97, 97, 97);
+
+}
+    .navbar {
+    width: 100%;
+    padding: 0%;
+}
+
+.navbar .container1 {
+    background-color: #4a98f7;
+}
+
+.navbar .container1 .box-navigation {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 15px 0px 15px 0px;
+}
     .navbar .container1 .box-navigation .box:nth-child(5) {
         display: flex;
         margin-left: 58vw;
@@ -805,51 +772,293 @@ fieldset{
     }
 }
 @media (min-width: 720px) and (max-width: 992px) {
+    .navbar {
+    width: 100%;
+    padding: 0%;
+    }
+
+    .navbar .container1 {
+    background-color: #4a98f7;
+    }
+
+    .navbar .container1 .box-navigation {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 15px 0px 15px 0px;
+    }
+    .navbar .container1 .box-navigation .box:nth-child(5) {
+        display: flex;
+        margin-left: 58vw;
+    }
+
+    .navbar .container1 .box-navigation .box:nth-child(5) i {
+        color: white;
+        font-size: 30px;
+    }
+
+    .navbar .container1 .box-navigation .box:nth-child(2) {
+        display: flex;
+        position: absolute;
+        top: 200px;
+        left: 120px;
+        background-color: white;
+        width: 250px;
+        border-radius: 10px;
+        box-shadow: 0 0 5px black;
+        opacity: 0;
+    }
+
+    .navbar .container1 .box-navigation .menu-navigation.menu-active {
+        opacity: 1;
+
+    }
+
+    .navbar .container1 .box-navigation .box:nth-child(2) ul {
+        flex-direction: column;
+    }
+
+    .navbar .container1 .box-navigation .box:nth-child(2) ul li {
+        margin-top: 10px;
+    }
+
+    .navbar .container1 .box-navigation .box:nth-child(2) ul li a {
+        color: black;
+    }
+
+
+    .navbar .container1 .box-navigation .box:nth-child(4) {
+        display: none;
+    }
+
+    .navbar .container1 .box-navigation .box:nth-child(3) {
+        display: none;
+    }
     .container{
-        max-width: 100%;
+    margin-top: 5%;
+    background-color: gray;
+    box-shadow: 0 0 5px 5px black;
+    color: black;
+    width: 80%;
+    font-size:larger;
+    padding-top: 1%;
+    padding-bottom: 3%;
+    border-radius: 5px;
     }
     form .gender-details .category{
-        width: 50%;
+        width: 100%;
+        margin: 0%;
+        margin-top: 3%;
     }
     .user-details .input-box input{
-    height: 45px;
-    width: 50%;
+    height: 35px;
+    width: 60%;
     outline: none;
     border-radius: 5px;
     border: 1px solid #ccc;
-    margin-left: 30%;
+    margin-left: 50%;
     padding-left: 15px;
-    font-size: 16px;
+    font-size: large;
     border-bottom-width: 2px;
     transition: all 0.3s ease;
     }
-    #deskripsi{
-    height: 100px;
-    width: 50%;
-    outline: none;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    margin-left: 30%;
-    padding-left: 15px;
-    font-size: 16px;
-    border-bottom-width: 2px;
+
+    .user-details .input-box input::focus,
+    .user-details .input-box input:valid{
+    border-color: #9b59b6;
+}
+form .gender-details .category{
+    display: flex;
+    justify-content: space-between;
+}
+.gender-details .category label{
+    display: flex;
+    align-items: center;
+}
+.gender-details .category .dot{
+    height: 28px;
+    width: 28px;
+    background: #d9d9d9;
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 5px solid transparent;
     transition: all 0.3s ease;
+}
+#dot-1:checked ~ .category label .one,
+#dot-2:checked ~ .category label .two{
+    border-color: #d9d9b6;
+    background: #9b59b6;
+    cursor: pointer;
+}
+form input[type="radio"]{
+    display: none;
+}
+form .button{
+    height: 45px;
+    margin: 45px 0;
+    
+}
+form .button input{
+    height: 90%;
+    width: 30%;
+    outline: none;
+    color: #fff;
+    border: none;
+    font-size: large;
+    font-weight: 500;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    cursor: pointer;
     appearance: none;
-    }
-    #format {
+
+    color: #fff;
+    background-color: rgb(22, 189, 22);;
+    box-shadow: inset 0 -8px 0 0 rgba(0, 0, 0, 0.2);
+    transition: 0.5s;
+    text-shadow: 0px 3px rgba(0, 0, 0, 0.2);
+}
+form .button input:hover{
+    background: linear-gradient(135deg, #71b7e6, #9b59b9);
+}
+form .button input:active{
+    box-shadow: inset 0 -1 0 0 rgba(0, 0, 0, 0.2);
+    text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
+}
+.button2{
     height: 45px;
-    width: 50%;
+    margin: 45px 0;
+}
+.button2{
+    height: 90%;
+    width: 30%;
+    margin-left: 10px;
+    outline: none;
+    border: none;
+    font-size: large;
+    font-weight: 500;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    appearance: none;
+    
+    color: red;
+    border: 3px solid red;
+    background-image: linear-gradient(to bottom, transparent 50%, red 50%);
+    background-size: 100% 200%;
+    background-position: 0% 5%;
+}
+form .button2:hover{
+    color: #fff;
+    background: red;
+    background-position: 0% 0%;
+}
+
+#format {
+    height: 35px;
+    width: 60%;
     outline: none;
     border-radius: 5px;
     border: 1px solid #ccc;
-    margin-left: 30%;
+    margin-left: 50%;
     padding-left: 15px;
-    font-size: 16px;
+    font-size: large;
     border-bottom-width: 2px;
     transition: all 0.3s ease;
     appearance: none;
     cursor: pointer;
     
+}
+#deskripsi{
+    height: 100px;
+    width: 60%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-left: 50%;
+    padding-left: 15px;
+    font-size: large;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+    appearance: none;
+}
+.input-box input[type="phone"]{
+    width: 60%;
+}
+.input-box input[type="email"]{
+    width: 60%;
+}
+.input-box span1{
+    color: red;
+}
+.input-box input:invalid,
+.input-box input:required:invalid{
+    border-color: red;
+}
+.input-box input:valid,
+.input-box input:required{
+    border-color: seagreen;
+}
+form input[type="date"]{
+    cursor: pointer;
+}
+#submit-error{
+    color: red;
+}
+.input-box span1 i{
+    color: seagreen;
+    position: absolute;
+}
+.popup{
+    width: 400px;
+    background: #fff;
+    border-radius: 6px;
+    position: absolute;
+    top: 0%;
+    margin-top: 40%;
+    margin-left: 3%;
+    left: 50%;
+    transform: translate(-50%,-50%), scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #333;
+    visibility: hidden;
+    transition: transform 0.4s,top 0.4s;
+}
+.open-popup{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+}
+.popup img{
+    width: 100px;
+    margin-top: -50px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+.popup h2{
+    font-size: 38px;
+    font-weight: 500;
+    margin: 30px 0 10px;
+}
+.popup button{
+    width: 100%;
+    margin-top: 50px;
+    padding: 10px 0;
+    background: #6fd649;
+    color: #fff;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+fieldset{
+    border: 5px solid black;
+    margin: 15px 15px 15px 15px;
+    border-radius: 10px;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 5%;
 }
 .footer {
         width: 100%;
@@ -864,7 +1073,7 @@ fieldset{
         color: white;
         font-weight: 600;
         font-family: Arial, Helvetica, sans-serif;
-        font-size: 15px;
+        font-size: large;
         padding: 20px;
     }
 
@@ -1006,14 +1215,16 @@ fieldset{
             </ul>
           </div>
     <br>
-    
+    <div data-aos="fade-up"
+    data-aos-duration="3000">
     <div class="container">
         <fieldset><legend><b class="title">Booking Service</b></legend>
         <br>
         <br>
         <form action="#">
             <div class="user-details">
-                
+                <div data-aos="fade-up"
+     data-aos-anchor-placement="bottom-bottom">
                 <div class="input-box">
                     <span class="details">Jenis Kendaraan :</span>
                     <div class="select">
@@ -1028,13 +1239,19 @@ fieldset{
                     <span1 id="format-error"></span1>
                     </div>
                     </div>
+                </div>
                     <br>
+            <div data-aos="fade-up"
+                data-aos-anchor-placement="bottom-bottom">
                 <div class="input-box">
                 <span class="details">Nama Pemesan :</span>
                 <input type="text" placeholder="Masukan Nama Pemesan" id="contact-name" onkeyup="validateName()" required>
                 <span1 id="name-error"></span1>
                 </div>
+            </div>
                 <br>
+            <div data-aos="fade-up"
+                data-aos-anchor-placement="bottom-bottom">
                 <div class="gender-details">
                     <input type="radio" name="gender" id="dot-1">
                     <input type="radio" name="gender" id="dot-2">
@@ -1050,19 +1267,28 @@ fieldset{
                     </label>
                 </div>
                 </div>
+            </div>
                 <br>
+            <div data-aos="fade-up"
+                data-aos-anchor-placement="bottom-bottom">
                 <div class="input-box">
                 <span class="details">Deskripsi Kebutuhan :</span>
                 <textarea id="deskripsi" rows="10" placeholder="Tuliskan Deskripsi" required></textarea>
                 <span1 class="deskripsi-error"></span1>
                 </div>
+            </div>
                 <br>
+            <div data-aos="fade-up"
+                data-aos-anchor-placement="bottom-bottom">
                 <div class="input-box">
                 <span class="details">Jam, Tanggal Service :</span>
                 <input type="date" placeholder="Enter your name" required>
                 <span1 id="date-error"></span1>
                 </div>
+            </div>
                 <br>
+            <div data-aos="fade-up"
+                data-aos-anchor-placement="bottom-bottom">
                 <div class="input-box">
                 <span class="details">Request Montir :</span>
                 <div class="select">
@@ -1077,23 +1303,33 @@ fieldset{
                 <span1 id="format1"></span1>
                 </div>
                 </div>
+            </div>
                 <br>
+            <div data-aos="fade-up"
+                data-aos-anchor-placement="bottom-bottom">
                 <div class="input-box">
                 <span class="details">Telpon/HP :</span>
                 <input type="phone" placeholder="Masukan No. Tlp" id="contact-phone" onkeyup="validatePhone()" required>
                 <span1 id="phone-error"></span1>
                 </div>
+            </div>
                 <br>
+                <div data-aos="fade-up"
+                data-aos-anchor-placement="bottom-bottom">
                 <div class="input-box">
                 <span class="details">Email :</span>
                 <input type="email" placeholder="Masukan Email" id="contact-email" onkeyup="validateEmail()" required>
                 <span1 id="email-error"></span1>
                 </div>
+            </div>
                 <br>
+                <div data-aos="fade-up"
+                data-aos-anchor-placement="center-bottom">
                 <div class="button">
                 <input type="submit" value="Submit" onclick="openPopup()"> 
                 <span1 id="submit-error"></span1>
                 <button class="button2" onclick="reset()">Reset</button>
+            </div>
                 <div class="popup" id="popup">
                     <img src="https://static.vecteezy.com/system/resources/previews/010/141/413/non_2x/tick-icon-sign-symbol-design-free-png.png" alt="mantap">
                     <h2>Thank You!</h2>
@@ -1101,11 +1337,11 @@ fieldset{
                     <button type="button" onclick="closePopup()">Ok</button>
                 </div>
             </div>
-        </div>
         </form>
         </fieldset>
     </div>
         </fieldset>
+    </div>
     <br>
     <section class="footer">
         <div class="text-footer">
@@ -1180,6 +1416,9 @@ fieldset{
         function myFunction() {
             document.getElementById("myForm").reset();
         }
+        
+        AOS.init();
+
         </script>    
 </div>
 </body>

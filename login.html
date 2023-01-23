@@ -20,6 +20,8 @@
     <!-- Theme style -->
     <link rel="stylesheet" href="dist/css/adminlte.min.css" />
     <link rel="icon" href="dist/image/favicon.svg" type="image/x-icon" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </head>
   <body class="hold-transition login-page" style="background-color: #347ebb;">
     <div class="login-box">
@@ -27,8 +29,10 @@
       <p><b>Login</b> Bengkel-IN</p>
       </div>
       <!-- /.login-logo -->
-      <div class="card">
-        <div class="col-md-6 offset-md-3">
+      <div data-aos="zoom-in"
+      data-aos-duration="3000">
+        <div class="card">
+          <div class="col-md-6 offset-md-3">
           <a href="index.html"><img src="dist/image/logobengkelin1.png" class="img-fluid" alt="..."></a>
         </div>
         <div class="card-body login-card-body mt-0">
@@ -93,8 +97,11 @@
         <!-- /.login-card-body -->
       </div>
     </div>
+    </div>
     <!-- /.login-box -->
-
+    <script>
+      AOS.init();
+    </script>
     <!-- jQuery -->
     <script src="plugins/jquery/jquery.min.js"></script>
     <!-- Bootstrap 4 -->
