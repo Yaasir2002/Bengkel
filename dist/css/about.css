@@ -262,6 +262,7 @@
 .card .card-border .card-text p:nth-child(2) {
     font-family: 'Poppins', sans-serif;
     text-align: center;
+    color: white;
 }
 
 /* Footer */
