@@ -31,7 +31,7 @@
     height: 20vh;
     background-image: url(../image/bg1@300x.png);
     background-repeat: no-repeat;
-    background-size: 50%;
+    background-size: cover;
     background-position: center;
     display: flex;
     align-items: center;
