@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bengkel Putra Prima</title>
+    <title>Booking</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
     <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
@@ -21,7 +21,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'popins',sans-serif;
-    font-size: large;
     scroll-behavior: smooth;
 }
 
@@ -31,7 +30,7 @@
 
 .container{
     margin-top: 5%;
-    background-color: grey;
+    background-color: #cfcfcf;
     box-shadow: 0 0 5px 5px black;
     color: black;
     width: 80%;
@@ -70,7 +69,7 @@ select:focus{
     border: 1px solid #ccc;
     margin-left: 35%;
     padding-left: 15px;
-    font-size: 16px;
+    font-size: small;
     border-bottom-width: 2px;
     transition: all 0.3s ease;
 }
@@ -274,40 +273,18 @@ fieldset{
 }
 
 
-.header .container1{
-    padding: 15px 0px 15px 0px;
-    width: 100%;
-    margin: auto;
-    height: 20vh;
-    background-image: url(dist/image/bg1@300x.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    align-items: center;
-}
-
-.header .container1 .wrap-header {
-    width: 100%;
-    margin: auto;
-}
-
-.header .container1 .wrap-header h1 {
-    text-align: center;
-    font-family: 'Poppins', sans-serif;
-    font-size: 50px;
-    color: white;
-}
-
 /* Navbar */
 .navbar {
     width: 100%;
     padding: 0%;
+    margin: 0%;
 }
 
 .navbar .container1 {
     background-color: #4a98f7;
+    width: 100%;
 }
+
 
 .navbar .container1 .box-navigation {
     display: flex;
@@ -324,22 +301,32 @@ fieldset{
 
 
 .navbar .container1 .box-navigation .box:nth-child(1) a {
-    text-decoration: none;
-    font-size: 17px;
+  text-decoration: none;
+    font-size: 25px;
     font-family: 'Poppins', sans-serif;
     color: white;
-}
-
-.navbar .container1 .box-navigation .box:nth-child(2) {
-    margin-right: 25vw;
+    display: inline-block;
+    width: 180px;
 }
 
 .navbar .container1 .box-navigation .box:nth-child(2) ul {
     list-style: none;
     display: flex;
     text-align: center;
-}
 
+}
+.navbar .container .box-navigation .box:nth-child(2) ul li:hover{
+    background-color: salmon;
+    border-radius: 4px;
+}
+.navbar .container .box-navigation .box:nth-child(2) ul li {
+    margin-left: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 5px;
+}
 .navbar .container1 .box-navigation .box:nth-child(2) ul li {
     margin-left: 40px;
     display: flex;
@@ -367,8 +354,31 @@ fieldset{
 
 .navbar .container1 .box-navigation .box:nth-child(5) {
     display: none;
-} 
+}
+/* Header */
+.header .container1 {
+    padding: 15px 0px 15px 0px;
+    width: 100%;
+    margin: auto;
+    height: 20vh;
+    background-image: url(dist/image/bg1@300x.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+}
 
+.header .container1 .wrap-header {
+    width: 100%;
+}
+
+.header .container1 .wrap-header h1 {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 50px;
+    color: white;
+}
 .footer {
     width: 100%;
     background-color: #4a98f7;
@@ -390,8 +400,8 @@ fieldset{
     margin-right: 10px;
 }
 
-.footer .text-footer p{
-    margin-top: 15px;
+.footer .text-footer p {
+  margin-top: 15px;
 }
 
 .breadcumb-arrow{
@@ -467,7 +477,6 @@ select:focus{
 .navbar .container1 {
     background-color: #4a98f7;
 }
-
 .navbar .container1 .box-navigation {
     display: flex;
     flex-direction: row;
@@ -476,7 +485,7 @@ select:focus{
 }
     .navbar .container1 .box-navigation .box:nth-child(5) {
         display: flex;
-        margin-left: 58vw;
+        margin-left: 30vw;
     }
 
     .navbar .container1 .box-navigation .box:nth-child(5) i {
@@ -487,7 +496,7 @@ select:focus{
     .navbar .container1 .box-navigation .box:nth-child(2) {
         display: flex;
         position: absolute;
-        top: 200px;
+        top: 80px;
         left: 120px;
         background-color: white;
         width: 250px;
@@ -498,6 +507,7 @@ select:focus{
 
     .navbar .container1 .box-navigation .menu-navigation.menu-active {
         opacity: 1;
+        z-index: 1;
 
     }
 
@@ -528,11 +538,13 @@ select:focus{
     box-shadow: 0 0 5px 5px black;
     color: black;
     width: 90%;
-    font-size: small;
     padding-top: 1%;
+    font-size: x-small;
     padding-bottom: 3%;
     border-radius: 5px;
     }
+
+
     form .gender-details .category{
         width: 100%;
         margin: 0%;
@@ -545,12 +557,12 @@ select:focus{
     border: 1px solid #ccc;
     margin-left: 50%;
     padding-left: 15px;
-    font-size: small;
+    font-size: x-small;
     border-bottom-width: 2px;
     transition: all 0.3s ease;
     }
     .title{
-        font-size:large;
+        font-size: x-large;
     }
     .user-details .input-box input::focus,
 .user-details .input-box input:valid{
@@ -594,7 +606,7 @@ form .button input{
     outline: none;
     color: #fff;
     border: none;
-    font-size: small;
+    font-size: x-small;
     font-weight: 500;
     border-radius: 5px;
     letter-spacing: 1px;
@@ -624,7 +636,7 @@ form .button input:active{
     margin-left: 10px;
     outline: none;
     border: none;
-    font-size: small;
+    font-size: x-small;
     font-weight: 500;
     border-radius: 5px;
     letter-spacing: 1px;
@@ -651,7 +663,7 @@ form .button2:hover{
     border: 1px solid #ccc;
     margin-left: 50%;
     padding-left: 15px;
-    font-size: small;
+    font-size: x-small;
     border-bottom-width: 2px;
     transition: all 0.3s ease;
     appearance: none;
@@ -667,7 +679,7 @@ form .button2:hover{
     margin-left: 50%;
     margin-top: 10%;
     padding-left: 15px;
-    font-size: small;
+    font-size: x-small;
     border-bottom-width: 2px;
     transition: all 0.3s ease;
     appearance: none;
@@ -900,6 +912,7 @@ form .button{
     margin: 45px 0;
     
 }
+
 form .button input{
     height: 90%;
     width: 30%;
@@ -1205,6 +1218,7 @@ fieldset{
           </div>
         </div>
       </section>
+
       <br>
       <section>
         <div class="breadcumb">
@@ -1353,6 +1367,13 @@ fieldset{
     </section>
     </section>
     <script>
+const menuBar = document.querySelector('.menu-bar')
+const menuNav = document.querySelector('.menu-navigation')
+
+ menuBar.addEventListener('click', function(){
+    menuNav.classList.toggle('menu-active')
+ })
+
         var nameError = document.getElementById('name-error')
         var formatError = document.getElementById('format-error')
         var format1Error = document.getElementById('format1-error')
@@ -1422,6 +1443,7 @@ fieldset{
         AOS.init();
 
         </script>    
+        <script src="dist/js/jsindex.js"></script>
 </div>
 </body>
 </html>

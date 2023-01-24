@@ -405,9 +405,10 @@ hr{
 
 .navbar .container1 {
     background-color: #4a98f7;
+    width: 100%;
 }
 
-.navbar .container1 .box-navigation {
+.navbar .container1 .box-navigation{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -422,22 +423,31 @@ hr{
 
 
 .navbar .container1 .box-navigation .box:nth-child(1) a {
-    text-decoration: none;
-    font-size: 17px;
+  text-decoration: none;
+    font-size: 25px;
     font-family: 'Poppins', sans-serif;
     color: white;
-}
-
-.navbar .container1 .box-navigation .box:nth-child(2) {
-    margin-right: 25vw;
+    display: inline-block;
+    width: 180px;
 }
 
 .navbar .container1 .box-navigation .box:nth-child(2) ul {
-    list-style: none;
-    display: flex;
-    text-align: center;
+  list-style: none;
+  display: flex;
+  text-align: center;
 }
-
+.navbar .container .box-navigation .box:nth-child(2) ul li:hover{
+    background-color: salmon;
+    border-radius: 4px;
+}
+.navbar .container .box-navigation .box:nth-child(2) ul li {
+    margin-left: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 5px;
+}
 .navbar .container1 .box-navigation .box:nth-child(2) ul li {
     margin-left: 40px;
     display: flex;
@@ -472,7 +482,7 @@ hr{
     width: 100%;
     margin: auto;
     height: 20vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(dist/image/hero.png);
+    background-image: url(dist/image/bg1@300x.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -520,7 +530,7 @@ hr{
   }
   .navbar .container1 .box-navigation .box:nth-child(5) {
         display: flex;
-        margin-left: 58vw;
+        margin-left: 30vw;
     }
 
     .navbar .container1 .box-navigation .box:nth-child(5) i {
@@ -531,7 +541,7 @@ hr{
     .navbar .container1 .box-navigation .box:nth-child(2) {
         display: flex;
         position: absolute;
-        top: 200px;
+        top: 80px;
         left: 120px;
         background-color: white;
         width: 250px;
@@ -542,6 +552,7 @@ hr{
 
     .navbar .container1 .box-navigation .menu-navigation.menu-active {
         opacity: 1;
+        z-index: 1;
 
     }
 
@@ -566,6 +577,10 @@ hr{
         display: none;
     }
     
+    .details{
+      font-size: 1px;
+    }
+
     .container{
         max-width: 90%;
         display: block !important;
@@ -1373,10 +1388,20 @@ hr{
     </div>
   </section>
 </section>
+</div>
+
+
     <script>
+      const menuBar = document.querySelector(".menu-bar");
+      const menuNav = document.querySelector(".menu-navigation");
+
+      menuBar.addEventListener("click", function () {
+        menuNav.classList.toggle("menu-active");
+      });
+
         var nameError = document.getElementById('name-error')
 
-    function validateName(){
+        function validateName(){
             var name = document.getElementById('contact-name').value;
 
             if(name.length == 0){
@@ -1417,10 +1442,10 @@ hr{
         AOS.init();
         </script>
 
+
 <!-- ./wrapper -->
-
 <!-- REQUIRED SCRIPTS -->
-
+<script src="dist/js/jsindex.js"></script>
 <!-- jQuery -->
 <script src="plugins/jquery/jquery.min.js"></script>
 <!-- Bootstrap 4 -->
